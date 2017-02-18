@@ -1,0 +1,1131 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4C26BA11E58FE4C00E30FE9 /* SpeedyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C26B981E58FE4C00E30FE9 /* SpeedyiOS.framework */; };
+		D4C26BA61E58FE4C00E30FE9 /* SpeedyiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BA51E58FE4C00E30FE9 /* SpeedyiOSTests.swift */; };
+		D4C26BA81E58FE4C00E30FE9 /* SpeedyiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C26B9A1E58FE4C00E30FE9 /* SpeedyiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4C26BBD1E58FE7000E30FE9 /* SpeedyMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C26BB41E58FE7000E30FE9 /* SpeedyMacOS.framework */; };
+		D4C26BC21E58FE7000E30FE9 /* SpeedyMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BC11E58FE7000E30FE9 /* SpeedyMacOSTests.swift */; };
+		D4C26BC41E58FE7000E30FE9 /* SpeedyMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C26BB61E58FE7000E30FE9 /* SpeedyMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4C26BD91E58FE8200E30FE9 /* SpeedyTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C26BD01E58FE8200E30FE9 /* SpeedyTVOS.framework */; };
+		D4C26BDE1E58FE8200E30FE9 /* SpeedyTVOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BDD1E58FE8200E30FE9 /* SpeedyTVOSTests.swift */; };
+		D4C26BE01E58FE8200E30FE9 /* SpeedyTVOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C26BD21E58FE8200E30FE9 /* SpeedyTVOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4C26BF01E58FE8F00E30FE9 /* SpeedyWatchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C26BEE1E58FE8F00E30FE9 /* SpeedyWatchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4C26BF61E58FF5C00E30FE9 /* Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BF51E58FF5C00E30FE9 /* Inspectable.swift */; };
+		D4C26BF71E58FF5C00E30FE9 /* Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BF51E58FF5C00E30FE9 /* Inspectable.swift */; };
+		D4C26BF81E58FF5C00E30FE9 /* Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BF51E58FF5C00E30FE9 /* Inspectable.swift */; };
+		D4C26BF91E58FF5C00E30FE9 /* Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BF51E58FF5C00E30FE9 /* Inspectable.swift */; };
+		D4C26BFB1E58FF7A00E30FE9 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BFA1E58FF7A00E30FE9 /* Monitor.swift */; };
+		D4C26BFC1E58FF7A00E30FE9 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BFA1E58FF7A00E30FE9 /* Monitor.swift */; };
+		D4C26BFD1E58FF7A00E30FE9 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BFA1E58FF7A00E30FE9 /* Monitor.swift */; };
+		D4C26BFE1E58FF7A00E30FE9 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BFA1E58FF7A00E30FE9 /* Monitor.swift */; };
+		D4C26C001E58FF8F00E30FE9 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BFF1E58FF8F00E30FE9 /* Value.swift */; };
+		D4C26C011E58FF8F00E30FE9 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BFF1E58FF8F00E30FE9 /* Value.swift */; };
+		D4C26C021E58FF8F00E30FE9 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BFF1E58FF8F00E30FE9 /* Value.swift */; };
+		D4C26C031E58FF8F00E30FE9 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BFF1E58FF8F00E30FE9 /* Value.swift */; };
+		D4C26C051E58FFB200E30FE9 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C041E58FFB200E30FE9 /* Transformer.swift */; };
+		D4C26C061E58FFB200E30FE9 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C041E58FFB200E30FE9 /* Transformer.swift */; };
+		D4C26C071E58FFB200E30FE9 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C041E58FFB200E30FE9 /* Transformer.swift */; };
+		D4C26C081E58FFB200E30FE9 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C041E58FFB200E30FE9 /* Transformer.swift */; };
+		D4C26C0A1E58FFC200E30FE9 /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C091E58FFC200E30FE9 /* Evaluator.swift */; };
+		D4C26C0B1E58FFC200E30FE9 /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C091E58FFC200E30FE9 /* Evaluator.swift */; };
+		D4C26C0C1E58FFC200E30FE9 /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C091E58FFC200E30FE9 /* Evaluator.swift */; };
+		D4C26C0D1E58FFC200E30FE9 /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C091E58FFC200E30FE9 /* Evaluator.swift */; };
+		D4C26C101E59004200E30FE9 /* SpeedyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C0F1E59004200E30FE9 /* SpeedyTests.swift */; };
+		D4C26C111E59004200E30FE9 /* SpeedyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C0F1E59004200E30FE9 /* SpeedyTests.swift */; };
+		D4C26C121E59004200E30FE9 /* SpeedyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C0F1E59004200E30FE9 /* SpeedyTests.swift */; };
+		D4C26C131E59006E00E30FE9 /* Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BF51E58FF5C00E30FE9 /* Inspectable.swift */; };
+		D4C26C141E59006E00E30FE9 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BFF1E58FF8F00E30FE9 /* Value.swift */; };
+		D4C26C151E59006E00E30FE9 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BFA1E58FF7A00E30FE9 /* Monitor.swift */; };
+		D4C26C161E59006E00E30FE9 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C041E58FFB200E30FE9 /* Transformer.swift */; };
+		D4C26C171E59006E00E30FE9 /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C091E58FFC200E30FE9 /* Evaluator.swift */; };
+		D4C26C181E59006E00E30FE9 /* Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BF51E58FF5C00E30FE9 /* Inspectable.swift */; };
+		D4C26C191E59006E00E30FE9 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BFF1E58FF8F00E30FE9 /* Value.swift */; };
+		D4C26C1A1E59006E00E30FE9 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BFA1E58FF7A00E30FE9 /* Monitor.swift */; };
+		D4C26C1B1E59006E00E30FE9 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C041E58FFB200E30FE9 /* Transformer.swift */; };
+		D4C26C1C1E59006E00E30FE9 /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C091E58FFC200E30FE9 /* Evaluator.swift */; };
+		D4C26C1D1E59006F00E30FE9 /* Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BF51E58FF5C00E30FE9 /* Inspectable.swift */; };
+		D4C26C1E1E59006F00E30FE9 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BFF1E58FF8F00E30FE9 /* Value.swift */; };
+		D4C26C1F1E59006F00E30FE9 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BFA1E58FF7A00E30FE9 /* Monitor.swift */; };
+		D4C26C201E59006F00E30FE9 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C041E58FFB200E30FE9 /* Transformer.swift */; };
+		D4C26C211E59006F00E30FE9 /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26C091E58FFC200E30FE9 /* Evaluator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4C26BA21E58FE4C00E30FE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4C26B701E58FD2200E30FE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4C26B971E58FE4C00E30FE9;
+			remoteInfo = SpeedyiOS;
+		};
+		D4C26BBE1E58FE7000E30FE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4C26B701E58FD2200E30FE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4C26BB31E58FE7000E30FE9;
+			remoteInfo = SpeedyMacOS;
+		};
+		D4C26BDA1E58FE8200E30FE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4C26B701E58FD2200E30FE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4C26BCF1E58FE8200E30FE9;
+			remoteInfo = SpeedyTVOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4C26B981E58FE4C00E30FE9 /* SpeedyiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpeedyiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C26B9A1E58FE4C00E30FE9 /* SpeedyiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedyiOS.h; sourceTree = "<group>"; };
+		D4C26B9B1E58FE4C00E30FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C26BA01E58FE4C00E30FE9 /* SpeedyiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedyiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C26BA51E58FE4C00E30FE9 /* SpeedyiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedyiOSTests.swift; sourceTree = "<group>"; };
+		D4C26BA71E58FE4C00E30FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C26BB41E58FE7000E30FE9 /* SpeedyMacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpeedyMacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C26BB61E58FE7000E30FE9 /* SpeedyMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedyMacOS.h; sourceTree = "<group>"; };
+		D4C26BB71E58FE7000E30FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C26BBC1E58FE7000E30FE9 /* SpeedyMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedyMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C26BC11E58FE7000E30FE9 /* SpeedyMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedyMacOSTests.swift; sourceTree = "<group>"; };
+		D4C26BC31E58FE7000E30FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C26BD01E58FE8200E30FE9 /* SpeedyTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpeedyTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C26BD21E58FE8200E30FE9 /* SpeedyTVOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedyTVOS.h; sourceTree = "<group>"; };
+		D4C26BD31E58FE8200E30FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C26BD81E58FE8200E30FE9 /* SpeedyTVOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedyTVOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C26BDD1E58FE8200E30FE9 /* SpeedyTVOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedyTVOSTests.swift; sourceTree = "<group>"; };
+		D4C26BDF1E58FE8200E30FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C26BEC1E58FE8F00E30FE9 /* SpeedyWatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpeedyWatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C26BEE1E58FE8F00E30FE9 /* SpeedyWatchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedyWatchOS.h; sourceTree = "<group>"; };
+		D4C26BEF1E58FE8F00E30FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C26BF51E58FF5C00E30FE9 /* Inspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Inspectable.swift; path = Sources/Inspectable.swift; sourceTree = "<group>"; };
+		D4C26BFA1E58FF7A00E30FE9 /* Monitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monitor.swift; path = Sources/Monitor.swift; sourceTree = "<group>"; };
+		D4C26BFF1E58FF8F00E30FE9 /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/Value.swift; sourceTree = "<group>"; };
+		D4C26C041E58FFB200E30FE9 /* Transformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transformer.swift; path = Sources/Transformer.swift; sourceTree = "<group>"; };
+		D4C26C091E58FFC200E30FE9 /* Evaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Evaluator.swift; path = Sources/Evaluator.swift; sourceTree = "<group>"; };
+		D4C26C0F1E59004200E30FE9 /* SpeedyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeedyTests.swift; path = Tests/SpeedyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4C26B941E58FE4C00E30FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26B9D1E58FE4C00E30FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C26BA11E58FE4C00E30FE9 /* SpeedyiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BB01E58FE7000E30FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BB91E58FE7000E30FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C26BBD1E58FE7000E30FE9 /* SpeedyMacOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BCC1E58FE8200E30FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BD51E58FE8200E30FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C26BD91E58FE8200E30FE9 /* SpeedyTVOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BE81E58FE8F00E30FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4C26B6F1E58FD2200E30FE9 = {
+			isa = PBXGroup;
+			children = (
+				D4C26BF41E58FF2200E30FE9 /* Sources */,
+				D4C26C0E1E59002D00E30FE9 /* Tests */,
+				D4C26B991E58FE4C00E30FE9 /* SpeedyiOS */,
+				D4C26BA41E58FE4C00E30FE9 /* SpeedyiOSTests */,
+				D4C26BB51E58FE7000E30FE9 /* SpeedyMacOS */,
+				D4C26BC01E58FE7000E30FE9 /* SpeedyMacOSTests */,
+				D4C26BD11E58FE8200E30FE9 /* SpeedyTVOS */,
+				D4C26BDC1E58FE8200E30FE9 /* SpeedyTVOSTests */,
+				D4C26BED1E58FE8F00E30FE9 /* SpeedyWatchOS */,
+				D4C26B7A1E58FD2200E30FE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4C26B7A1E58FD2200E30FE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4C26B981E58FE4C00E30FE9 /* SpeedyiOS.framework */,
+				D4C26BA01E58FE4C00E30FE9 /* SpeedyiOSTests.xctest */,
+				D4C26BB41E58FE7000E30FE9 /* SpeedyMacOS.framework */,
+				D4C26BBC1E58FE7000E30FE9 /* SpeedyMacOSTests.xctest */,
+				D4C26BD01E58FE8200E30FE9 /* SpeedyTVOS.framework */,
+				D4C26BD81E58FE8200E30FE9 /* SpeedyTVOSTests.xctest */,
+				D4C26BEC1E58FE8F00E30FE9 /* SpeedyWatchOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4C26B991E58FE4C00E30FE9 /* SpeedyiOS */ = {
+			isa = PBXGroup;
+			children = (
+				D4C26B9A1E58FE4C00E30FE9 /* SpeedyiOS.h */,
+				D4C26B9B1E58FE4C00E30FE9 /* Info.plist */,
+			);
+			path = SpeedyiOS;
+			sourceTree = "<group>";
+		};
+		D4C26BA41E58FE4C00E30FE9 /* SpeedyiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4C26BA51E58FE4C00E30FE9 /* SpeedyiOSTests.swift */,
+				D4C26BA71E58FE4C00E30FE9 /* Info.plist */,
+			);
+			path = SpeedyiOSTests;
+			sourceTree = "<group>";
+		};
+		D4C26BB51E58FE7000E30FE9 /* SpeedyMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				D4C26BB61E58FE7000E30FE9 /* SpeedyMacOS.h */,
+				D4C26BB71E58FE7000E30FE9 /* Info.plist */,
+			);
+			path = SpeedyMacOS;
+			sourceTree = "<group>";
+		};
+		D4C26BC01E58FE7000E30FE9 /* SpeedyMacOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4C26BC11E58FE7000E30FE9 /* SpeedyMacOSTests.swift */,
+				D4C26BC31E58FE7000E30FE9 /* Info.plist */,
+			);
+			path = SpeedyMacOSTests;
+			sourceTree = "<group>";
+		};
+		D4C26BD11E58FE8200E30FE9 /* SpeedyTVOS */ = {
+			isa = PBXGroup;
+			children = (
+				D4C26BD21E58FE8200E30FE9 /* SpeedyTVOS.h */,
+				D4C26BD31E58FE8200E30FE9 /* Info.plist */,
+			);
+			path = SpeedyTVOS;
+			sourceTree = "<group>";
+		};
+		D4C26BDC1E58FE8200E30FE9 /* SpeedyTVOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4C26BDD1E58FE8200E30FE9 /* SpeedyTVOSTests.swift */,
+				D4C26BDF1E58FE8200E30FE9 /* Info.plist */,
+			);
+			path = SpeedyTVOSTests;
+			sourceTree = "<group>";
+		};
+		D4C26BED1E58FE8F00E30FE9 /* SpeedyWatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				D4C26BEE1E58FE8F00E30FE9 /* SpeedyWatchOS.h */,
+				D4C26BEF1E58FE8F00E30FE9 /* Info.plist */,
+			);
+			path = SpeedyWatchOS;
+			sourceTree = "<group>";
+		};
+		D4C26BF41E58FF2200E30FE9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D4C26BF51E58FF5C00E30FE9 /* Inspectable.swift */,
+				D4C26BFF1E58FF8F00E30FE9 /* Value.swift */,
+				D4C26BFA1E58FF7A00E30FE9 /* Monitor.swift */,
+				D4C26C041E58FFB200E30FE9 /* Transformer.swift */,
+				D4C26C091E58FFC200E30FE9 /* Evaluator.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		D4C26C0E1E59002D00E30FE9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D4C26C0F1E59004200E30FE9 /* SpeedyTests.swift */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D4C26B951E58FE4C00E30FE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C26BA81E58FE4C00E30FE9 /* SpeedyiOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BB11E58FE7000E30FE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C26BC41E58FE7000E30FE9 /* SpeedyMacOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BCD1E58FE8200E30FE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C26BE01E58FE8200E30FE9 /* SpeedyTVOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BE91E58FE8F00E30FE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C26BF01E58FE8F00E30FE9 /* SpeedyWatchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D4C26B971E58FE4C00E30FE9 /* SpeedyiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C26BA91E58FE4C00E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyiOS" */;
+			buildPhases = (
+				D4C26B931E58FE4C00E30FE9 /* Sources */,
+				D4C26B941E58FE4C00E30FE9 /* Frameworks */,
+				D4C26B951E58FE4C00E30FE9 /* Headers */,
+				D4C26B961E58FE4C00E30FE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeedyiOS;
+			productName = SpeedyiOS;
+			productReference = D4C26B981E58FE4C00E30FE9 /* SpeedyiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4C26B9F1E58FE4C00E30FE9 /* SpeedyiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C26BAC1E58FE4C00E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyiOSTests" */;
+			buildPhases = (
+				D4C26B9C1E58FE4C00E30FE9 /* Sources */,
+				D4C26B9D1E58FE4C00E30FE9 /* Frameworks */,
+				D4C26B9E1E58FE4C00E30FE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4C26BA31E58FE4C00E30FE9 /* PBXTargetDependency */,
+			);
+			name = SpeedyiOSTests;
+			productName = SpeedyiOSTests;
+			productReference = D4C26BA01E58FE4C00E30FE9 /* SpeedyiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4C26BB31E58FE7000E30FE9 /* SpeedyMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C26BC51E58FE7000E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyMacOS" */;
+			buildPhases = (
+				D4C26BAF1E58FE7000E30FE9 /* Sources */,
+				D4C26BB01E58FE7000E30FE9 /* Frameworks */,
+				D4C26BB11E58FE7000E30FE9 /* Headers */,
+				D4C26BB21E58FE7000E30FE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeedyMacOS;
+			productName = SpeedyMacOS;
+			productReference = D4C26BB41E58FE7000E30FE9 /* SpeedyMacOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4C26BBB1E58FE7000E30FE9 /* SpeedyMacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C26BC81E58FE7000E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyMacOSTests" */;
+			buildPhases = (
+				D4C26BB81E58FE7000E30FE9 /* Sources */,
+				D4C26BB91E58FE7000E30FE9 /* Frameworks */,
+				D4C26BBA1E58FE7000E30FE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4C26BBF1E58FE7000E30FE9 /* PBXTargetDependency */,
+			);
+			name = SpeedyMacOSTests;
+			productName = SpeedyMacOSTests;
+			productReference = D4C26BBC1E58FE7000E30FE9 /* SpeedyMacOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4C26BCF1E58FE8200E30FE9 /* SpeedyTVOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C26BE11E58FE8200E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyTVOS" */;
+			buildPhases = (
+				D4C26BCB1E58FE8200E30FE9 /* Sources */,
+				D4C26BCC1E58FE8200E30FE9 /* Frameworks */,
+				D4C26BCD1E58FE8200E30FE9 /* Headers */,
+				D4C26BCE1E58FE8200E30FE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeedyTVOS;
+			productName = SpeedyTVOS;
+			productReference = D4C26BD01E58FE8200E30FE9 /* SpeedyTVOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4C26BD71E58FE8200E30FE9 /* SpeedyTVOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C26BE41E58FE8200E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyTVOSTests" */;
+			buildPhases = (
+				D4C26BD41E58FE8200E30FE9 /* Sources */,
+				D4C26BD51E58FE8200E30FE9 /* Frameworks */,
+				D4C26BD61E58FE8200E30FE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4C26BDB1E58FE8200E30FE9 /* PBXTargetDependency */,
+			);
+			name = SpeedyTVOSTests;
+			productName = SpeedyTVOSTests;
+			productReference = D4C26BD81E58FE8200E30FE9 /* SpeedyTVOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4C26BEB1E58FE8F00E30FE9 /* SpeedyWatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C26BF11E58FE8F00E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyWatchOS" */;
+			buildPhases = (
+				D4C26BE71E58FE8F00E30FE9 /* Sources */,
+				D4C26BE81E58FE8F00E30FE9 /* Frameworks */,
+				D4C26BE91E58FE8F00E30FE9 /* Headers */,
+				D4C26BEA1E58FE8F00E30FE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeedyWatchOS;
+			productName = SpeedyWatchOS;
+			productReference = D4C26BEC1E58FE8F00E30FE9 /* SpeedyWatchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4C26B701E58FD2200E30FE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Red Hand Technologies";
+				TargetAttributes = {
+					D4C26B971E58FE4C00E30FE9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7DDX24S6TZ;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					D4C26B9F1E58FE4C00E30FE9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7DDX24S6TZ;
+						ProvisioningStyle = Automatic;
+					};
+					D4C26BB31E58FE7000E30FE9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7DDX24S6TZ;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					D4C26BBB1E58FE7000E30FE9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7DDX24S6TZ;
+						ProvisioningStyle = Automatic;
+					};
+					D4C26BCF1E58FE8200E30FE9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7DDX24S6TZ;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					D4C26BD71E58FE8200E30FE9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7DDX24S6TZ;
+						ProvisioningStyle = Automatic;
+					};
+					D4C26BEB1E58FE8F00E30FE9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7DDX24S6TZ;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D4C26B731E58FD2200E30FE9 /* Build configuration list for PBXProject "Speedy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D4C26B6F1E58FD2200E30FE9;
+			productRefGroup = D4C26B7A1E58FD2200E30FE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4C26B971E58FE4C00E30FE9 /* SpeedyiOS */,
+				D4C26B9F1E58FE4C00E30FE9 /* SpeedyiOSTests */,
+				D4C26BB31E58FE7000E30FE9 /* SpeedyMacOS */,
+				D4C26BBB1E58FE7000E30FE9 /* SpeedyMacOSTests */,
+				D4C26BCF1E58FE8200E30FE9 /* SpeedyTVOS */,
+				D4C26BD71E58FE8200E30FE9 /* SpeedyTVOSTests */,
+				D4C26BEB1E58FE8F00E30FE9 /* SpeedyWatchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4C26B961E58FE4C00E30FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26B9E1E58FE4C00E30FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BB21E58FE7000E30FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BBA1E58FE7000E30FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BCE1E58FE8200E30FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BD61E58FE8200E30FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BEA1E58FE8F00E30FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4C26B931E58FE4C00E30FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C26C0A1E58FFC200E30FE9 /* Evaluator.swift in Sources */,
+				D4C26BFB1E58FF7A00E30FE9 /* Monitor.swift in Sources */,
+				D4C26BF61E58FF5C00E30FE9 /* Inspectable.swift in Sources */,
+				D4C26C001E58FF8F00E30FE9 /* Value.swift in Sources */,
+				D4C26C051E58FFB200E30FE9 /* Transformer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26B9C1E58FE4C00E30FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C26C131E59006E00E30FE9 /* Inspectable.swift in Sources */,
+				D4C26C171E59006E00E30FE9 /* Evaluator.swift in Sources */,
+				D4C26C161E59006E00E30FE9 /* Transformer.swift in Sources */,
+				D4C26C151E59006E00E30FE9 /* Monitor.swift in Sources */,
+				D4C26BA61E58FE4C00E30FE9 /* SpeedyiOSTests.swift in Sources */,
+				D4C26C101E59004200E30FE9 /* SpeedyTests.swift in Sources */,
+				D4C26C141E59006E00E30FE9 /* Value.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BAF1E58FE7000E30FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C26C0B1E58FFC200E30FE9 /* Evaluator.swift in Sources */,
+				D4C26BFC1E58FF7A00E30FE9 /* Monitor.swift in Sources */,
+				D4C26BF71E58FF5C00E30FE9 /* Inspectable.swift in Sources */,
+				D4C26C011E58FF8F00E30FE9 /* Value.swift in Sources */,
+				D4C26C061E58FFB200E30FE9 /* Transformer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BB81E58FE7000E30FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C26C181E59006E00E30FE9 /* Inspectable.swift in Sources */,
+				D4C26C1C1E59006E00E30FE9 /* Evaluator.swift in Sources */,
+				D4C26C1B1E59006E00E30FE9 /* Transformer.swift in Sources */,
+				D4C26C1A1E59006E00E30FE9 /* Monitor.swift in Sources */,
+				D4C26BC21E58FE7000E30FE9 /* SpeedyMacOSTests.swift in Sources */,
+				D4C26C111E59004200E30FE9 /* SpeedyTests.swift in Sources */,
+				D4C26C191E59006E00E30FE9 /* Value.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BCB1E58FE8200E30FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C26C0C1E58FFC200E30FE9 /* Evaluator.swift in Sources */,
+				D4C26BFD1E58FF7A00E30FE9 /* Monitor.swift in Sources */,
+				D4C26BF81E58FF5C00E30FE9 /* Inspectable.swift in Sources */,
+				D4C26C021E58FF8F00E30FE9 /* Value.swift in Sources */,
+				D4C26C071E58FFB200E30FE9 /* Transformer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BD41E58FE8200E30FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C26C1D1E59006F00E30FE9 /* Inspectable.swift in Sources */,
+				D4C26C211E59006F00E30FE9 /* Evaluator.swift in Sources */,
+				D4C26C201E59006F00E30FE9 /* Transformer.swift in Sources */,
+				D4C26C1F1E59006F00E30FE9 /* Monitor.swift in Sources */,
+				D4C26BDE1E58FE8200E30FE9 /* SpeedyTVOSTests.swift in Sources */,
+				D4C26C121E59004200E30FE9 /* SpeedyTests.swift in Sources */,
+				D4C26C1E1E59006F00E30FE9 /* Value.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C26BE71E58FE8F00E30FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C26C0D1E58FFC200E30FE9 /* Evaluator.swift in Sources */,
+				D4C26BFE1E58FF7A00E30FE9 /* Monitor.swift in Sources */,
+				D4C26BF91E58FF5C00E30FE9 /* Inspectable.swift in Sources */,
+				D4C26C031E58FF8F00E30FE9 /* Value.swift in Sources */,
+				D4C26C081E58FFB200E30FE9 /* Transformer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4C26BA31E58FE4C00E30FE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4C26B971E58FE4C00E30FE9 /* SpeedyiOS */;
+			targetProxy = D4C26BA21E58FE4C00E30FE9 /* PBXContainerItemProxy */;
+		};
+		D4C26BBF1E58FE7000E30FE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4C26BB31E58FE7000E30FE9 /* SpeedyMacOS */;
+			targetProxy = D4C26BBE1E58FE7000E30FE9 /* PBXContainerItemProxy */;
+		};
+		D4C26BDB1E58FE8200E30FE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4C26BCF1E58FE8200E30FE9 /* SpeedyTVOS */;
+			targetProxy = D4C26BDA1E58FE8200E30FE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D4C26B8B1E58FD2200E30FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D4C26B8C1E58FD2200E30FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4C26BAA1E58FE4C00E30FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SpeedyiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RedHand.SpeedyiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D4C26BAB1E58FE4C00E30FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SpeedyiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RedHand.SpeedyiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D4C26BAD1E58FE4C00E30FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				INFOPLIST_FILE = SpeedyiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RedHand.SpeedyiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D4C26BAE1E58FE4C00E30FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				INFOPLIST_FILE = SpeedyiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RedHand.SpeedyiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D4C26BC61E58FE7000E30FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SpeedyMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RedHand.SpeedyMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D4C26BC71E58FE7000E30FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SpeedyMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RedHand.SpeedyMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D4C26BC91E58FE7000E30FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				INFOPLIST_FILE = SpeedyMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RedHand.SpeedyMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D4C26BCA1E58FE7000E30FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				INFOPLIST_FILE = SpeedyMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RedHand.SpeedyMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D4C26BE21E58FE8200E30FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SpeedyTVOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RedHand.SpeedyTVOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		D4C26BE31E58FE8200E30FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SpeedyTVOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RedHand.SpeedyTVOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		D4C26BE51E58FE8200E30FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				INFOPLIST_FILE = SpeedyTVOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RedHand.SpeedyTVOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		D4C26BE61E58FE8200E30FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				INFOPLIST_FILE = SpeedyTVOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RedHand.SpeedyTVOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		D4C26BF21E58FE8F00E30FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SpeedyWatchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RedHand.SpeedyWatchOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		D4C26BF31E58FE8F00E30FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SpeedyWatchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RedHand.SpeedyWatchOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4C26B731E58FD2200E30FE9 /* Build configuration list for PBXProject "Speedy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C26B8B1E58FD2200E30FE9 /* Debug */,
+				D4C26B8C1E58FD2200E30FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4C26BA91E58FE4C00E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C26BAA1E58FE4C00E30FE9 /* Debug */,
+				D4C26BAB1E58FE4C00E30FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4C26BAC1E58FE4C00E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C26BAD1E58FE4C00E30FE9 /* Debug */,
+				D4C26BAE1E58FE4C00E30FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4C26BC51E58FE7000E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C26BC61E58FE7000E30FE9 /* Debug */,
+				D4C26BC71E58FE7000E30FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4C26BC81E58FE7000E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyMacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C26BC91E58FE7000E30FE9 /* Debug */,
+				D4C26BCA1E58FE7000E30FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4C26BE11E58FE8200E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyTVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C26BE21E58FE8200E30FE9 /* Debug */,
+				D4C26BE31E58FE8200E30FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4C26BE41E58FE8200E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyTVOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C26BE51E58FE8200E30FE9 /* Debug */,
+				D4C26BE61E58FE8200E30FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4C26BF11E58FE8F00E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyWatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C26BF21E58FE8F00E30FE9 /* Debug */,
+				D4C26BF31E58FE8F00E30FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4C26B701E58FD2200E30FE9 /* Project object */;
+}
