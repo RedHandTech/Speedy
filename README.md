@@ -4,7 +4,7 @@
 
 ###### Quick Start
 
-* To get started with Speedy you can use [Carthage](https://github.com/Carthage/Carthage) or simply download the source and build for the desired OS.
+* To get started with Speedy you can use [Carthage](https://github.com/Carthage/Carthage), [Cocoapods](https://cocoapods.org), or simply download the source and build for the desired OS.
 
 > Carthage
 
@@ -16,6 +16,10 @@ github "RedHandTech/Speedy"
 ```
 
 * Run `carthage update`
+
+> Cocoapods
+
+* Add `pod 'Speedy', '~> 0.1'` to your Podfile and run `pod install`
 
 ###### Documentation
 
@@ -31,7 +35,7 @@ github "RedHandTech/Speedy"
 
 ##### Examples
 
-**NOTE:** The following example assume an MVVM environment. Speedy is particulary useful when adopting MVVM.
+**NOTE:** The following examples assume an MVVM environment. Speedy is particulary useful when adopting MVVM.
 
 ###### Creating Values
 
