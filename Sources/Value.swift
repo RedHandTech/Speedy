@@ -14,15 +14,18 @@ public class Value<T>: Inspectable<T> {
         get {
             return _value
         } set {
+            oldValue = value
             _value = newValue
         }
     }
+    
+    private(set) public var oldValue: T?
     
     // MARK: - Private
     
     fileprivate var _value: T {
         didSet {
-            perform(with: _value)
+            perform(_value, oldValue: oldValue)
         }
     }
     
@@ -34,8 +37,8 @@ public class Value<T>: Inspectable<T> {
     
     // MARK: - Overrides
     
-    internal override func perform(_ value: Any) {
+    internal override func perform(_ value: Any, oldValue: Any?) {
         // trigger chain
-        nextItem?.perform(with: _value)
+        nextItem?.perform(_value, oldValue: oldValue)
     }
 }

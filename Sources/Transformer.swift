@@ -20,11 +20,17 @@ internal class Transformer<T, U>: Inspectable<U> {
     
     // MARK: - Overrides
     
-    internal override func perform(_ value: Any) {
+    internal override func perform(_ value: Any, oldValue: Any?) {
         
         guard let val = value as? T else { return }
         
+        var oldVal: U?
+        if let ov = oldValue as? T {
+            oldVal = performer(ov)
+        }
+        
         let newVal = performer(val)
-        nextItem?.perform(with: newVal)
+        
+        nextItem?.perform(newVal, oldValue: oldVal)
     }
 }
