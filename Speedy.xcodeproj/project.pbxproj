@@ -1076,6 +1076,7 @@
 				D4C26BAB1E58FE4C00E30FE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4C26BAC1E58FE4C00E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1084,6 +1085,7 @@
 				D4C26BAE1E58FE4C00E30FE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4C26BC51E58FE7000E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyMacOS" */ = {
 			isa = XCConfigurationList;
@@ -1092,6 +1094,7 @@
 				D4C26BC71E58FE7000E30FE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4C26BC81E58FE7000E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyMacOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1100,6 +1103,7 @@
 				D4C26BCA1E58FE7000E30FE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4C26BE11E58FE8200E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyTVOS" */ = {
 			isa = XCConfigurationList;
@@ -1108,6 +1112,7 @@
 				D4C26BE31E58FE8200E30FE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4C26BE41E58FE8200E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyTVOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1116,6 +1121,7 @@
 				D4C26BE61E58FE8200E30FE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4C26BF11E58FE8F00E30FE9 /* Build configuration list for PBXNativeTarget "SpeedyWatchOS" */ = {
 			isa = XCConfigurationList;
@@ -1124,6 +1130,7 @@
 				D4C26BF31E58FE8F00E30FE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
