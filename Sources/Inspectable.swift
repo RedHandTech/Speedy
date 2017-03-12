@@ -62,17 +62,15 @@ public class Inspectable<T>: Performer {
     }
 }
 
-/*
-extension Inspectable where T: Equatable {
+public extension Inspectable where T: Equatable {
     
     public func distinct() -> Inspectable<T> {
         
-        let comp = Comparer(performer: { $0 != $1 })
+        let comp = Comparer<T>(performer: { $0 != $1 })
         nextItem = comp
         return comp
     }
 }
- */
 
 
 
