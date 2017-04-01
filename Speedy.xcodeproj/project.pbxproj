@@ -89,7 +89,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D42FD30E1E75F79B001E0CCD /* Comparer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comparer.swift; sourceTree = "<group>"; };
+		D42FD30E1E75F79B001E0CCD /* Comparer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comparer.swift; path = Sources/Comparer.swift; sourceTree = "<group>"; };
 		D4C26B981E58FE4C00E30FE9 /* SpeedyiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpeedyiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C26B9A1E58FE4C00E30FE9 /* SpeedyiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedyiOS.h; sourceTree = "<group>"; };
 		D4C26B9B1E58FE4C00E30FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
