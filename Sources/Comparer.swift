@@ -1,21 +1,21 @@
 //
-//  Evaluator.swift
+//  Comparer.swift
 //  Speedy
 //
-//  Created by Robert Sanders on 18/02/2017.
+//  Created by Robert Sanders on 12/03/2017.
 //  Copyright © 2017 Red Hand Technologies. All rights reserved.
 //
 
-internal class Evaluator<T>: Inspectable<T> {
+internal class Comparer<T>: Inspectable<T> {
     
     // MARK: - Private
     
-    fileprivate let performer: (T) -> Bool
+    fileprivate let perfomer: (T, T?) -> Bool
     
     // MARK: - Constructors
     
-    internal init(performer: @escaping (T) -> Bool) {
-        self.performer = performer
+    internal init(performer: @escaping (T, T?) -> Bool) {
+        self.perfomer = performer
     }
     
     // MARK: - Override
@@ -23,7 +23,7 @@ internal class Evaluator<T>: Inspectable<T> {
     internal override func perform(_ value: Any, oldValue: Any?) {
         
         guard let val = value as? T else { return }
-        guard performer(val) else { return }
+        guard perfomer(val, oldValue as? T) else { return }
         nextItem?.perform(val, oldValue: oldValue)
     }
 }

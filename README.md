@@ -225,7 +225,7 @@ The possibilities are endless!
 
 ###### Sequences
 
-Finally, as you may have noticed, Speedy supports sequences of `Inspectables` every call to `where`, `map` and `watch` returns another instance of `Inspectable` so you can continue to manipulate values.
+As you may have noticed, Speedy supports sequences of `Inspectables` every call to `where`, `map` and `watch` returns another instance of `Inspectable` so you can continue to manipulate values.
 
 This allows you to do something as simle as:
 
@@ -281,6 +281,46 @@ class MyViewController: UIViewController {
 
 	}
 }
+```
+
+###### Old Values
+
+You can access the old value of a given value by accessing the `oldValue` property (funnily enough...).
+
+```swift
+let myVal = Value(10)
+
+print(myVal.oldValue) // output nil
+
+myVal.value = 1
+
+print(myVal.oldValue) // output 10
+```
+
+There are also a few functions built around the old value:
+
+- ***Compare*** allows you to quickly compare the old value with the new value and decide whether to continue the chain:
+
+```swift
+let myVal = Value(0)
+        
+myVal.compare { $0 == ($1 ?? 0) + 1 }
+    .inspect { print("Incremented \($0 - 1) by 1 is now \($0)") }
+
+myVal.value += 1 // outputs: "Incremented 0 by 1 is now 1."
+myVal.value += 1 // outputs: "Incremented 1 by 1 is now 2"
+myVal.value += 2 // no output
+```
+
+- ***Distinct*** provides a quick and easy interface to ensure that the new value is not the same as the old value:
+
+```swift
+let val = Value("Hello")
+
+val.distinct()
+   .inspect { print("New distinct value: \($0)") }
+val.value = "Hello" // no output
+val.value = "Hello, World!" // output: "New distinct value: Hello, World!"
 ```
 
 Cool huh?

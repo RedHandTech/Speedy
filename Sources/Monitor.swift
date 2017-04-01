@@ -21,11 +21,11 @@ internal class Monitor<T>: Inspectable<T> {
     
     // MARK: - Overrides
     
-    internal override func perform(_ value: Any) {
+    internal override func perform(_ value: Any, oldValue: Any?) {
         
         guard let val = value as? T else { return }
         
         callback?(val)
-        nextItem?.perform(with: val)
+        nextItem?.perform(val, oldValue: oldValue)
     }
 }

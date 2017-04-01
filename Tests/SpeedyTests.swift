@@ -101,4 +101,55 @@ class SpeedyTests: XCTestCase {
         XCTAssertTrue(didCallOne)
         XCTAssertTrue(didCallTwo)
     }
+    
+    func test_oldValue() {
+        
+        let val = Value(10)
+        
+        XCTAssertNil(val.oldValue)
+        
+        val.value = 1
+        
+        XCTAssertEqual(val.oldValue, 10)
+    }
+    
+    func test_compare() {
+        
+        let val = Value("Hello")
+        
+        var didCall = false
+        
+        val.compare { $0 != $1 }
+            .inspect { _ in didCall = true }
+        
+        val.value = "Hello"
+        
+        XCTAssertFalse(didCall)
+        
+        val.value = "Hello, World!"
+        
+        XCTAssertTrue(didCall)
+    }
+    
+    func test_distinct() {
+        
+        let val = Value("Hello")
+        
+        var didCall = false
+        
+        val.distinct()
+            .inspect { _ in didCall = true }
+        
+        val.value = "Hello"
+        
+        XCTAssertFalse(didCall)
+        
+        val.value = "Hello, World!"
+        
+        XCTAssertTrue(didCall)
+    }
 }
+
+
+
+
