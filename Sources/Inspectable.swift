@@ -55,6 +55,13 @@ public class Inspectable<T>: Performer {
         return mon
     }
     
+    public func `do`(_ performer: @escaping (T) -> (T)) -> Inspectable<T> {
+        
+        let doer = Doer(performer: performer)
+        nextItem = doer
+        return doer
+    }
+    
     public func inspect(_ callback: @escaping (T) -> ()) {
         
         let mon = Monitor(callback: callback)
