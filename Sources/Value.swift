@@ -35,23 +35,6 @@ public class Value<T>: Inspectable<T> {
         _value = value
     }
     
-    // MARK: - Public
-    
-    public func onTick(_ timerMetadata: inout TimerMetadata) -> Inspectable<T> {
-        
-        let timer = Timer(&timerMetadata, value: self)
-        nextItem = timer
-        return timer.token
-    }
-    
-    public func evey(_ interval: Time) -> Inspectable<T> {
-        
-        var meta = TimerMetadata(interval: interval.rawValue)
-        let timer = Timer(&meta, value: self)
-        nextItem = timer
-        return timer.token
-    }
-    
     // MARK: - Overrides
     
     internal override func perform(_ value: Any, oldValue: Any?) {
@@ -59,3 +42,8 @@ public class Value<T>: Inspectable<T> {
         nextItem?.perform(_value, oldValue: oldValue)
     }
 }
+
+
+
+
+

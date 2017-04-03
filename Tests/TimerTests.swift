@@ -17,7 +17,7 @@ class TimerTests: XCTestCase {
         let value = Value(0)
         
         var metadata = TimerMetadata(interval: 1)
-        value.onTick(&metadata)
+        value.tick(&metadata)
             .do { v in
                 XCTAssertTrue(Thread.isMainThread)
                 return v + 1
@@ -41,7 +41,7 @@ class TimerTests: XCTestCase {
         
         let value = Value(0)
         
-        value.evey(.second)
+        value.every(.second)
             .do { v in
                 XCTAssertTrue(Thread.isMainThread)
                 return v + 1

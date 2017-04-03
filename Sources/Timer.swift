@@ -8,68 +8,6 @@
 
 import Foundation
 
-internal class TimerToken<T>: Inspectable<T> {
-    
-    // MARK: - Private
-    
-    fileprivate var timer: Timer<T>
-    
-    // MARK: - Construtors
-    
-    fileprivate init(timer: Timer<T>) {
-        self.timer = timer
-    }
-    
-    // MARK: - Public
-    
-    override func when(_ predicate: @escaping (T) -> Bool) -> Inspectable<T> {
-        setupTimer()
-        let ne = super.when(predicate)
-        self.timer.nextItem = ne
-        return ne
-    }
-    
-    override func map<U>(_ mapper: @escaping (T) -> U) -> Inspectable<U> {
-        setupTimer()
-        let ne = super.map(mapper)
-        self.timer.nextItem = ne
-        return ne
-    }
-    
-    override func compare(_ predicate: @escaping (T, T?) -> Bool) -> Inspectable<T> {
-        setupTimer()
-        let ne = super.compare(predicate)
-        self.timer.nextItem = ne
-        return ne
-    }
-    
-    override func watch(_ callback: @escaping (T) -> ()) -> Inspectable<T> {
-        setupTimer()
-        let ne = super.watch(callback)
-        self.timer.nextItem = ne
-        return ne
-    }
-    
-    public override func `do`(_ perfomer: @escaping (T) -> (T)) -> Inspectable<T> {
-        self.timer.peformer = perfomer
-        let ne = Doer<T>(performer: { $0 })
-        self.timer.nextItem = ne
-        return ne
-    }
-    
-    override func inspect(_ callback: @escaping (T) -> ()) {
-        setupTimer()
-        let mon = Monitor(callback: callback)
-        self.timer.nextItem = mon
-    }
-    
-    // MARK: - Private
-    
-    func setupTimer() {
-        self.timer.peformer = { $0 }
-    }
-}
-
 /// Speedy Timer metadata
 public struct TimerMetadata {
     
@@ -156,22 +94,12 @@ internal class Timer<T>: Inspectable<T> {
     
     // MARK: - Internal
     
-    internal var token: TimerToken<T> {
-        get {
-            if _token == nil {
-                _token = TimerToken(timer: self)
-            }
-            return _token!
-        }
-    }
+    internal var peformer: ((T) -> (T))?
     
     // MARK: - Private
     
     fileprivate var metadata: TimerMetadata
     fileprivate let value: Value<T>
-    fileprivate var peformer: ((T) -> (T))?
-    
-    fileprivate var _token: TimerToken<T>?
     
     // MARK: - Constructors
     
@@ -245,8 +173,6 @@ internal class Timer<T>: Inspectable<T> {
     }
     
 }
-
-
 
 
 
