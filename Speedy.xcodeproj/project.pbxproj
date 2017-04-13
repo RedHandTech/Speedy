@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA99E5381EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
+		CA99E5391EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
+		CA99E53A1EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
+		CA99E53B1EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
+		CA99E53C1EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
+		CA99E53D1EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
+		CA99E53E1EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
 		D40AC3B81E92F06B00FD2753 /* Value+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */; };
 		D40AC3B91E92F06B00FD2753 /* Value+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */; };
 		D40AC3BA1E92F06B00FD2753 /* Value+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */; };
@@ -102,6 +109,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA99E5371EA03E29008B9D79 /* Wait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wait.swift; sourceTree = "<group>"; };
 		D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Value+Timer.swift"; path = "Sources/Value+Timer.swift"; sourceTree = "<group>"; };
 		D42FD30E1E75F79B001E0CCD /* Comparer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comparer.swift; path = Sources/Comparer.swift; sourceTree = "<group>"; };
 		D43351F51E9052F3006C2EA2 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = Sources/Timer.swift; sourceTree = "<group>"; };
@@ -287,6 +295,7 @@
 				D42FD30E1E75F79B001E0CCD /* Comparer.swift */,
 				D43351F51E9052F3006C2EA2 /* Timer.swift */,
 				D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */,
+				CA99E5371EA03E29008B9D79 /* Wait.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -595,6 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D40AC3B81E92F06B00FD2753 /* Value+Timer.swift in Sources */,
+				CA99E5381EA03E29008B9D79 /* Wait.swift in Sources */,
 				D4C26C0A1E58FFC200E30FE9 /* Evaluator.swift in Sources */,
 				D4C26BFB1E58FF7A00E30FE9 /* Monitor.swift in Sources */,
 				D43351F61E9052F3006C2EA2 /* Timer.swift in Sources */,
@@ -619,6 +629,7 @@
 				D40AC3B91E92F06B00FD2753 /* Value+Timer.swift in Sources */,
 				D4C26C101E59004200E30FE9 /* SpeedyTests.swift in Sources */,
 				D4C26C141E59006E00E30FE9 /* Value.swift in Sources */,
+				CA99E5391EA03E29008B9D79 /* Wait.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +638,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D40AC3BA1E92F06B00FD2753 /* Value+Timer.swift in Sources */,
+				CA99E53A1EA03E29008B9D79 /* Wait.swift in Sources */,
 				D4C26C0B1E58FFC200E30FE9 /* Evaluator.swift in Sources */,
 				D4C26BFC1E58FF7A00E30FE9 /* Monitor.swift in Sources */,
 				D43351F81E9052F3006C2EA2 /* Timer.swift in Sources */,
@@ -651,6 +663,7 @@
 				D40AC3BB1E92F06B00FD2753 /* Value+Timer.swift in Sources */,
 				D4C26C111E59004200E30FE9 /* SpeedyTests.swift in Sources */,
 				D4C26C191E59006E00E30FE9 /* Value.swift in Sources */,
+				CA99E53B1EA03E29008B9D79 /* Wait.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,6 +672,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D40AC3BC1E92F06B00FD2753 /* Value+Timer.swift in Sources */,
+				CA99E53C1EA03E29008B9D79 /* Wait.swift in Sources */,
 				D4C26C0C1E58FFC200E30FE9 /* Evaluator.swift in Sources */,
 				D4C26BFD1E58FF7A00E30FE9 /* Monitor.swift in Sources */,
 				D43351FA1E9052F3006C2EA2 /* Timer.swift in Sources */,
@@ -683,6 +697,7 @@
 				D40AC3BD1E92F06B00FD2753 /* Value+Timer.swift in Sources */,
 				D4C26C121E59004200E30FE9 /* SpeedyTests.swift in Sources */,
 				D4C26C1E1E59006F00E30FE9 /* Value.swift in Sources */,
+				CA99E53D1EA03E29008B9D79 /* Wait.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +706,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D40AC3BE1E92F06B00FD2753 /* Value+Timer.swift in Sources */,
+				CA99E53E1EA03E29008B9D79 /* Wait.swift in Sources */,
 				D4C26C0D1E58FFC200E30FE9 /* Evaluator.swift in Sources */,
 				D4C26BFE1E58FF7A00E30FE9 /* Monitor.swift in Sources */,
 				D43351FC1E9052F3006C2EA2 /* Timer.swift in Sources */,
