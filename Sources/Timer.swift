@@ -9,7 +9,7 @@
 import Foundation
 
 /// Speedy Timer metadata
-public struct TimerMetadata {
+public class TimerMetadata {
     
     // MARK: - Public
     
@@ -25,7 +25,6 @@ public struct TimerMetadata {
     fileprivate let delays: Bool
     fileprivate let updatesOnMainThread: Bool
     fileprivate let usesGCD: Bool
-    fileprivate let startImmidiately: Bool
     
     fileprivate var timerNotifier: (() -> ())?
     
@@ -34,7 +33,7 @@ public struct TimerMetadata {
     /// Initialises new TimerToken with given interval value and default parameters.
     ///
     /// - Parameter interval: Time interval between updates in seconds
-    init(interval: Float) {
+    convenience init(interval: Float) {
         self.init(interval: interval, delays: true, updatesOnMainThread: true, usesGCD: true, startImmidiately: true)
     }
     
@@ -50,13 +49,13 @@ public struct TimerMetadata {
         self.delays = delays ?? true
         self.updatesOnMainThread = updatesOnMainThread ?? true
         self.usesGCD = usesGCD ?? true
-        self.startImmidiately = startImmidiately ?? true
+        self.isRunning = startImmidiately ?? true
     }
     
     // MARK: - Public
     
     /// Starts the timer if in the paused or stop state.
-    mutating func start() {
+    func start() {
         
         guard !isRunning else { return }
         
@@ -65,13 +64,13 @@ public struct TimerMetadata {
     }
     
     /// Pauses the timer. Count is not cleared.
-    mutating func pause() {
+    func pause() {
      
         isRunning = false
     }
     
     /// Stops the timer (clears the count).
-    mutating func stop() {
+    func stop() {
         
         isRunning = false
         count = 0
@@ -79,7 +78,7 @@ public struct TimerMetadata {
     
     // MARK: - Private
     
-    fileprivate mutating func tick() {
+    fileprivate func tick() {
         
         count += 1
     }
@@ -103,7 +102,7 @@ internal class Timer<T>: Inspectable<T> {
     
     // MARK: - Constructors
     
-    internal init(_ metadata: inout TimerMetadata, value: Value<T>) {
+    internal init(_ metadata: TimerMetadata, value: Value<T>) {
         
         self.metadata = metadata
         self.value = value
@@ -123,8 +122,6 @@ internal class Timer<T>: Inspectable<T> {
     // MARK: - Private
     
     fileprivate func start() {
-        
-        guard metadata.startImmidiately else { return }
         
         if !metadata.usesGCD {
             let thread = Thread(target: self, selector: #selector(tick), object: nil)

@@ -148,6 +148,7 @@ class SpeedyTests: XCTestCase {
         
         XCTAssertTrue(didCall)
     }
+    
 }
 
 

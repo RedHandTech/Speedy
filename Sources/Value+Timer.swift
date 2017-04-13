@@ -22,7 +22,6 @@ public class TimerFunction<T> {
     
     public func `do`(_ performer: @escaping (T) -> T) -> Inspectable<T> {
         
-        // TODO: Think of better way of implementing this. Next item should never be nil but not nice to force it...
         timer.peformer = performer
         return timer
     }
@@ -35,20 +34,18 @@ extension Value {
     
     // MARK: - Timer Creation
     
-    public func tick(_ timerMetadata: inout TimerMetadata) -> TimerFunction<T> {
+    public func tick(_ timerMetadata: TimerMetadata) -> TimerFunction<T> {
         
-        let timer = Timer(&timerMetadata, value: self)
+        let timer = Timer(timerMetadata, value: self)
         self.nextItem = timer
         return TimerFunction(timer: timer)
     }
     
     public func every(_ interval: Time) -> TimerFunction<T> {
         
-        var meta = TimerMetadata(interval: interval.rawValue)
-        let timer = Timer(&meta, value: self)
+        let meta = TimerMetadata(interval: interval.rawValue)
+        let timer = Timer(meta, value: self)
         self.nextItem = timer
         return TimerFunction(timer: timer)
     }
-    
-
 }
