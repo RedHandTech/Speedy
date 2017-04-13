@@ -60,6 +60,8 @@ public class Wait {
                     welf?.performer?()
                 }
             }
+            
+            Thread.sleep(forTimeInterval: 1)
         }
     }
     
