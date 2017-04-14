@@ -27,6 +27,7 @@ public class TimerMetadata {
     fileprivate let usesGCD: Bool
     
     fileprivate var timerNotifier: (() -> ())?
+    fileprivate var shouldDelay: Bool = false
     
     // MARK: - Constructors
     
@@ -50,6 +51,8 @@ public class TimerMetadata {
         self.updatesOnMainThread = updatesOnMainThread ?? true
         self.usesGCD = usesGCD ?? true
         self.isRunning = startImmidiately ?? true
+        
+        self.shouldDelay = self.delays
     }
     
     // MARK: - Public
@@ -67,6 +70,7 @@ public class TimerMetadata {
     func pause() {
      
         isRunning = false
+        self.shouldDelay = true
     }
     
     /// Stops the timer (clears the count).
@@ -74,6 +78,7 @@ public class TimerMetadata {
         
         isRunning = false
         count = 0
+        self.shouldDelay = self.delays
     }
     
     // MARK: - Private
@@ -100,6 +105,9 @@ internal class Timer<T>: Inspectable<T> {
     fileprivate var metadata: TimerMetadata
     fileprivate let value: Value<T>
     
+    // keep refeference to all running threads so that only one runs at a time
+    fileprivate var threadRunning: [UUID: Bool] = [:]
+    
     // MARK: - Constructors
     
     internal init(_ metadata: TimerMetadata, value: Value<T>) {
@@ -123,26 +131,35 @@ internal class Timer<T>: Inspectable<T> {
     
     fileprivate func start() {
         
+        clearRunningThreads()
+        
+        let threadID = UUID()
+        threadRunning[threadID] = true
+        
         if !metadata.usesGCD {
-            let thread = Thread(target: self, selector: #selector(tick), object: nil)
+            let thread = Thread(target: self, selector: #selector(tick), object: threadID)
             thread.start()
         } else {
             let queue = DispatchQueue(label: "com.Speedy.SerialQueue")
             weak var welf = self
             queue.async {
-                welf?.tick()
+                welf?.tick(id: threadID)
             }
         }
     }
     
-    @objc fileprivate func tick() {
+    @objc fileprivate func tick(id: UUID) {
         
-        if metadata.count == 0 && metadata.delays {
-            // is starting so need to delay
+        if metadata.shouldDelay {
             Thread.sleep(forTimeInterval: TimeInterval(metadata.interval))
         }
         
         while metadata.isRunning {
+            
+            // check this thread is still supposed to be running
+            if threadRunning[id] != true {
+                return
+            }
             
             // use performer to update the value's value
             if metadata.updatesOnMainThread {
@@ -159,6 +176,13 @@ internal class Timer<T>: Inspectable<T> {
             metadata.tick()
             // sleep the thread
             Thread.sleep(forTimeInterval: TimeInterval(metadata.interval))
+        }
+    }
+    
+    fileprivate func clearRunningThreads() {
+    
+        for key in threadRunning.keys {
+            threadRunning[key] = false
         }
     }
     
