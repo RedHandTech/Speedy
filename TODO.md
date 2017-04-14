@@ -1,0 +1,4 @@
+- History class. See n number of changes to a value
+- Undo management. Integration with History class to perform rollbacks. Make it really easy.
+- Better documentation.
+- Make everything as easy as possible. Operator overloads etc. E.g. ~> to access the value property directly.

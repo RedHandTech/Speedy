@@ -105,7 +105,3 @@ build
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
-# End of https://www.gitignore.io/api/swift,macos,xcode
-
-# Other
-TODO.md
