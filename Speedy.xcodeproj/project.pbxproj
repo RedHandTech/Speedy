@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA65A00D1EA0CDB700DB198B /* WaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65A00C1EA0CDB700DB198B /* WaitTests.swift */; };
+		CA65A00E1EA0CDB700DB198B /* WaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65A00C1EA0CDB700DB198B /* WaitTests.swift */; };
+		CA65A00F1EA0CDB700DB198B /* WaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65A00C1EA0CDB700DB198B /* WaitTests.swift */; };
 		CA99E5381EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
 		CA99E5391EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
 		CA99E53A1EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
@@ -109,6 +112,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA65A00C1EA0CDB700DB198B /* WaitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitTests.swift; sourceTree = "<group>"; };
 		CA99E5371EA03E29008B9D79 /* Wait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wait.swift; sourceTree = "<group>"; };
 		D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Value+Timer.swift"; path = "Sources/Value+Timer.swift"; sourceTree = "<group>"; };
 		D42FD30E1E75F79B001E0CCD /* Comparer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comparer.swift; path = Sources/Comparer.swift; sourceTree = "<group>"; };
@@ -305,6 +309,7 @@
 			children = (
 				D4C26C0F1E59004200E30FE9 /* SpeedyTests.swift */,
 				D433520D1E906C68006C2EA2 /* TimerTests.swift */,
+				CA65A00C1EA0CDB700DB198B /* WaitTests.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -625,6 +630,7 @@
 				D42FD3101E75F79B001E0CCD /* Comparer.swift in Sources */,
 				D4C26C161E59006E00E30FE9 /* Transformer.swift in Sources */,
 				D4C26C151E59006E00E30FE9 /* Monitor.swift in Sources */,
+				CA65A00D1EA0CDB700DB198B /* WaitTests.swift in Sources */,
 				D43351F71E9052F3006C2EA2 /* Timer.swift in Sources */,
 				D40AC3B91E92F06B00FD2753 /* Value+Timer.swift in Sources */,
 				D4C26C101E59004200E30FE9 /* SpeedyTests.swift in Sources */,
@@ -659,6 +665,7 @@
 				D42FD3121E75F79B001E0CCD /* Comparer.swift in Sources */,
 				D4C26C1B1E59006E00E30FE9 /* Transformer.swift in Sources */,
 				D4C26C1A1E59006E00E30FE9 /* Monitor.swift in Sources */,
+				CA65A00E1EA0CDB700DB198B /* WaitTests.swift in Sources */,
 				D43351F91E9052F3006C2EA2 /* Timer.swift in Sources */,
 				D40AC3BB1E92F06B00FD2753 /* Value+Timer.swift in Sources */,
 				D4C26C111E59004200E30FE9 /* SpeedyTests.swift in Sources */,
@@ -693,6 +700,7 @@
 				D42FD3141E75F79B001E0CCD /* Comparer.swift in Sources */,
 				D4C26C201E59006F00E30FE9 /* Transformer.swift in Sources */,
 				D4C26C1F1E59006F00E30FE9 /* Monitor.swift in Sources */,
+				CA65A00F1EA0CDB700DB198B /* WaitTests.swift in Sources */,
 				D43351FB1E9052F3006C2EA2 /* Timer.swift in Sources */,
 				D40AC3BD1E92F06B00FD2753 /* Value+Timer.swift in Sources */,
 				D4C26C121E59004200E30FE9 /* SpeedyTests.swift in Sources */,

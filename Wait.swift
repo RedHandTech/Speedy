@@ -8,6 +8,8 @@
 
 import Foundation
 
+internal var waiters: [UUID: Wait] = [:]
+
 public class Wait {
     
     // MARK: - Private
@@ -18,10 +20,18 @@ public class Wait {
     fileprivate var count: Float = 0
     fileprivate var isRunning: Bool = true
     
+    fileprivate let id: UUID = UUID()
+    
     // MARK: - Constructors
     
+    
+    /// Creates a new Wait instance that waits for the given number of seconds.
+    ///
+    /// - Parameter seconds: The number of seconds to wait for.
     init(_ seconds: Float) {
         self.seconds = seconds
+        
+        waiters[id] = self
     }
     
     // MARK: - Public
@@ -49,16 +59,21 @@ public class Wait {
     
     fileprivate func tick () {
         
+        defer {
+            waiters[self.id] = nil
+        }
+        
         while isRunning {
             count += 1
             
             if count >= seconds {
-                isRunning = false
                 count = 0
                 weak var welf = self
                 DispatchQueue.main.async {
                     welf?.performer?()
                 }
+                
+                return
             }
             
             Thread.sleep(forTimeInterval: 1)
