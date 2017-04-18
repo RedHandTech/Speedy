@@ -61,7 +61,7 @@ public class Wait {
     }
     
     public func cancel() {
-        self.isRunning = false
+        cleanAndStop()
     }
     
     // MARK: - Private
@@ -78,7 +78,7 @@ public class Wait {
     fileprivate func tick () {
         
         defer {
-            waiters[self.id] = nil
+            cleanAndStop()
         }
         
         while isRunning {
@@ -104,6 +104,11 @@ public class Wait {
             
             Thread.sleep(forTimeInterval: 1)
         }
+    }
+    
+    fileprivate func cleanAndStop() {
+        isRunning = false
+        waiters[id] = nil
     }
     
 }
