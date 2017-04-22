@@ -18,7 +18,7 @@ class WaitTests: XCTestCase {
             expectation.fulfill()
         }
         
-        self.waitForExpectations(timeout: 4, handler: { err in
+        self.waitForExpectations(timeout: 10, handler: { err in
             if let e = err {
                 print("Error: \(e)")
             }
@@ -38,7 +38,7 @@ class WaitTests: XCTestCase {
             }
         }
         
-        self.waitForExpectations(timeout: 4, handler: { err in
+        self.waitForExpectations(timeout: 10, handler: { err in
             if let e = err {
                 print("Error: \(e)")
             }

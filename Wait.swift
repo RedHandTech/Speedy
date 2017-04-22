@@ -19,22 +19,12 @@ public class Wait {
     fileprivate var repeatPerformer: ((_ end: inout Bool) -> ())?
     
     fileprivate var count: Float = 0
-    fileprivate var isRunning: Bool = true
+    fileprivate var isRunning: Bool = false
     fileprivate var repeats: Bool = false
     
     fileprivate let id: UUID = UUID()
     
-    /*
-     * TODO: At the moment successive calls to "then" will cause multiple threads to be created.
-     * INot desired behaviour as at end of wait loop the waiter is removed from the dict and will be released
-     * Write further tests for multiple "then" and "repeat" calls and ensure that only 1 thread is created.
-     * If user creates wait var and calls "then" multiple times what should happen?
-     */
- 
-    //fileprivate let runningThreads: [UUID: Bool] = [:]
-    
     // MARK: - Constructors
-    
     
     /// Creates a new Wait instance that waits for the given number of seconds.
     ///
@@ -47,26 +37,49 @@ public class Wait {
     
     // MARK: - Public
     
+    /// Specifies the closure to be called after the wait is over.
+    ///
+    /// - Parameter perform: The closure to be performed.
     public func then(_ perform: @escaping () -> ()) {
-        self.performer = perform
         
+        guard !isRunning else {
+            #if DEBUG
+                print("Err: Wait block already running.")
+            #endif
+            return
+        }
+        
+        self.performer = perform
         beginCountdown()
     }
     
+    /// Specifies the closure to be called every n seconds.
+    ///
+    /// - Parameter perform: The closure to be performed.
     public func `repeat`(_ perform: @escaping (_ end: inout Bool) -> ()) {
+        
+        guard !isRunning else {
+            #if DEBUG
+                print("Err: Wait block already running.")
+            #endif
+            return
+        }
+        
         self.repeatPerformer = perform
         self.repeats = true
-        
         beginCountdown()
     }
     
     public func cancel() {
-        cleanAndStop()
+        isRunning = false
+        waiters[id] = nil
     }
     
     // MARK: - Private
     
     fileprivate func beginCountdown() {
+        
+        isRunning = true
         
         let queue = DispatchQueue(label: "com.Speedy.SerialQueue")
         weak var welf = self
@@ -77,38 +90,38 @@ public class Wait {
     
     fileprivate func tick () {
         
-        defer {
-            cleanAndStop()
-        }
-        
         while isRunning {
             
             count += 1
             
             if count >= seconds {
-                count = 0
                 weak var welf = self
                 DispatchQueue.main.async {
-                    if let p = welf?.performer {
+                    
+                    // assert welf
+                    guard let s = welf else { return }
+                    
+                    if let p = s.performer {
                         p()
-                    } else if let p = welf?.repeatPerformer {
+                        // one time wait so exit
+                        s.cancel()
+                        return
+                    }
+                    
+                    if let p = s.repeatPerformer {
                         var end = false
                         p(&end)
-                        guard !end else { return }
-                    } else { return }
+                        guard !end else { s.cancel(); return }
+                    }
                 }
                 
-                guard repeats else { return }
-                count = 0
+                if repeats {
+                    count = 0
+                }
             }
             
             Thread.sleep(forTimeInterval: 1)
         }
-    }
-    
-    fileprivate func cleanAndStop() {
-        isRunning = false
-        waiters[id] = nil
     }
     
 }
