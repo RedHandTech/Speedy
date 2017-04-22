@@ -112,8 +112,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CA65A00C1EA0CDB700DB198B /* WaitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitTests.swift; sourceTree = "<group>"; };
-		CA99E5371EA03E29008B9D79 /* Wait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wait.swift; sourceTree = "<group>"; };
+		CA65A00C1EA0CDB700DB198B /* WaitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaitTests.swift; path = Tests/WaitTests.swift; sourceTree = "<group>"; };
+		CA99E5371EA03E29008B9D79 /* Wait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wait.swift; path = Sources/Wait.swift; sourceTree = "<group>"; };
 		D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Value+Timer.swift"; path = "Sources/Value+Timer.swift"; sourceTree = "<group>"; };
 		D42FD30E1E75F79B001E0CCD /* Comparer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comparer.swift; path = Sources/Comparer.swift; sourceTree = "<group>"; };
 		D43351F51E9052F3006C2EA2 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = Sources/Timer.swift; sourceTree = "<group>"; };
