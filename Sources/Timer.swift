@@ -8,16 +8,16 @@
 
 import Foundation
 
-/// Speedy Timer metadata
+/// A meta data class that is used to configure timer/upate loop behaviour.
 public class TimerMetadata {
     
     // MARK: - Public
     
     /// Number of updates called so far.
-    fileprivate(set) var count = 0
+    fileprivate(set) public var count = 0
     
     /// Whether the timer is currently running.
-    fileprivate(set) var isRunning: Bool = true
+    fileprivate(set) public var isRunning: Bool = true
     
     // MARK: - Private
     
@@ -34,7 +34,7 @@ public class TimerMetadata {
     /// Initialises new TimerToken with given interval value and default parameters.
     ///
     /// - Parameter interval: Time interval between updates in seconds
-    convenience init(interval: Float) {
+    public convenience init(interval: Float) {
         self.init(interval: interval, delays: true, updatesOnMainThread: true, usesGCD: true, startImmidiately: true)
     }
     
@@ -45,7 +45,7 @@ public class TimerMetadata {
     ///   - delays: Whether there is an interval delay between starting and the first udpdate call. Default is true.
     ///   - updatesOnMainThread: Whether the update is called on the main thread. Default is true.
     ///   - usesGCD: Whether the timer uses GCD. Default is true. False uses NSThread.
-    init(interval: Float, delays: Bool?, updatesOnMainThread: Bool?, usesGCD: Bool?, startImmidiately: Bool?) {
+    public init(interval: Float, delays: Bool?, updatesOnMainThread: Bool?, usesGCD: Bool?, startImmidiately: Bool?) {
         self.interval = interval
         self.delays = delays ?? true
         self.updatesOnMainThread = updatesOnMainThread ?? true
@@ -58,7 +58,7 @@ public class TimerMetadata {
     // MARK: - Public
     
     /// Starts the timer if in the paused or stop state.
-    func start() {
+    public func start() {
         
         guard !isRunning else { return }
         
@@ -67,14 +67,14 @@ public class TimerMetadata {
     }
     
     /// Pauses the timer. Count is not cleared.
-    func pause() {
+    public func pause() {
      
         isRunning = false
         self.shouldDelay = true
     }
     
     /// Stops the timer (clears the count).
-    func stop() {
+    public func stop() {
         
         isRunning = false
         count = 0
@@ -89,6 +89,10 @@ public class TimerMetadata {
     }
 }
 
+/// Time enumeration for convinience.
+///
+/// - second: Value 1
+/// - minute: Value 60
 public enum Time: Float {
     case second = 1
     case minute = 60

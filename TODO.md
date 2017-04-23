@@ -2,3 +2,4 @@
 - History class. See n number of changes to a value
 - Undo management. Integration with History class to perform rollbacks. Make it really easy.
 - Make everything as easy as possible. Operator overloads etc. E.g. ~> to access the value property directly.
+- Make value.every stoppable. At the moment a user cannot stop the tick once triggered.

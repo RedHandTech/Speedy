@@ -10,6 +10,7 @@ import Foundation
 
 internal var waiters: [UUID: Wait] = [:]
 
+/// A class that implements a timer functionality. Use to trigger events after a given time, optionally on repeat.
 public class Wait {
     
     // MARK: - Private
