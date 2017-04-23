@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA65A00D1EA0CDB700DB198B /* WaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65A00C1EA0CDB700DB198B /* WaitTests.swift */; };
+		CA65A00E1EA0CDB700DB198B /* WaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65A00C1EA0CDB700DB198B /* WaitTests.swift */; };
+		CA65A00F1EA0CDB700DB198B /* WaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65A00C1EA0CDB700DB198B /* WaitTests.swift */; };
+		CA99E5381EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
+		CA99E5391EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
+		CA99E53A1EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
+		CA99E53B1EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
+		CA99E53C1EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
+		CA99E53D1EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
+		CA99E53E1EA03E29008B9D79 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99E5371EA03E29008B9D79 /* Wait.swift */; };
+		D40AC3B81E92F06B00FD2753 /* Value+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */; };
+		D40AC3B91E92F06B00FD2753 /* Value+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */; };
+		D40AC3BA1E92F06B00FD2753 /* Value+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */; };
+		D40AC3BB1E92F06B00FD2753 /* Value+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */; };
+		D40AC3BC1E92F06B00FD2753 /* Value+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */; };
+		D40AC3BD1E92F06B00FD2753 /* Value+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */; };
+		D40AC3BE1E92F06B00FD2753 /* Value+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */; };
 		D42FD30F1E75F79B001E0CCD /* Comparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42FD30E1E75F79B001E0CCD /* Comparer.swift */; };
 		D42FD3101E75F79B001E0CCD /* Comparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42FD30E1E75F79B001E0CCD /* Comparer.swift */; };
 		D42FD3111E75F79B001E0CCD /* Comparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42FD30E1E75F79B001E0CCD /* Comparer.swift */; };
@@ -14,15 +31,21 @@
 		D42FD3131E75F79B001E0CCD /* Comparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42FD30E1E75F79B001E0CCD /* Comparer.swift */; };
 		D42FD3141E75F79B001E0CCD /* Comparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42FD30E1E75F79B001E0CCD /* Comparer.swift */; };
 		D42FD3151E75F79B001E0CCD /* Comparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42FD30E1E75F79B001E0CCD /* Comparer.swift */; };
+		D43351F61E9052F3006C2EA2 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43351F51E9052F3006C2EA2 /* Timer.swift */; };
+		D43351F71E9052F3006C2EA2 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43351F51E9052F3006C2EA2 /* Timer.swift */; };
+		D43351F81E9052F3006C2EA2 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43351F51E9052F3006C2EA2 /* Timer.swift */; };
+		D43351F91E9052F3006C2EA2 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43351F51E9052F3006C2EA2 /* Timer.swift */; };
+		D43351FA1E9052F3006C2EA2 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43351F51E9052F3006C2EA2 /* Timer.swift */; };
+		D43351FB1E9052F3006C2EA2 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43351F51E9052F3006C2EA2 /* Timer.swift */; };
+		D43351FC1E9052F3006C2EA2 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43351F51E9052F3006C2EA2 /* Timer.swift */; };
+		D433520E1E906C68006C2EA2 /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433520D1E906C68006C2EA2 /* TimerTests.swift */; };
+		D433520F1E906C68006C2EA2 /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433520D1E906C68006C2EA2 /* TimerTests.swift */; };
+		D43352101E906C68006C2EA2 /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433520D1E906C68006C2EA2 /* TimerTests.swift */; };
 		D4C26BA11E58FE4C00E30FE9 /* SpeedyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C26B981E58FE4C00E30FE9 /* SpeedyiOS.framework */; };
-		D4C26BA61E58FE4C00E30FE9 /* SpeedyiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BA51E58FE4C00E30FE9 /* SpeedyiOSTests.swift */; };
 		D4C26BA81E58FE4C00E30FE9 /* SpeedyiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C26B9A1E58FE4C00E30FE9 /* SpeedyiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4C26BBD1E58FE7000E30FE9 /* SpeedyMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C26BB41E58FE7000E30FE9 /* SpeedyMacOS.framework */; };
-		D4C26BC21E58FE7000E30FE9 /* SpeedyMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BC11E58FE7000E30FE9 /* SpeedyMacOSTests.swift */; };
 		D4C26BC41E58FE7000E30FE9 /* SpeedyMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C26BB61E58FE7000E30FE9 /* SpeedyMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4C26BD91E58FE8200E30FE9 /* SpeedyTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C26BD01E58FE8200E30FE9 /* SpeedyTVOS.framework */; };
-		D4C26BDE1E58FE8200E30FE9 /* SpeedyTVOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BDD1E58FE8200E30FE9 /* SpeedyTVOSTests.swift */; };
-		D4C26BE01E58FE8200E30FE9 /* SpeedyTVOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C26BD21E58FE8200E30FE9 /* SpeedyTVOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4C26BF01E58FE8F00E30FE9 /* SpeedyWatchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C26BEE1E58FE8F00E30FE9 /* SpeedyWatchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4C26BF61E58FF5C00E30FE9 /* Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BF51E58FF5C00E30FE9 /* Inspectable.swift */; };
 		D4C26BF71E58FF5C00E30FE9 /* Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C26BF51E58FF5C00E30FE9 /* Inspectable.swift */; };
@@ -89,24 +112,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA65A00C1EA0CDB700DB198B /* WaitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaitTests.swift; path = Tests/WaitTests.swift; sourceTree = "<group>"; };
+		CA99E5371EA03E29008B9D79 /* Wait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wait.swift; path = Sources/Wait.swift; sourceTree = "<group>"; };
+		D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Value+Timer.swift"; path = "Sources/Value+Timer.swift"; sourceTree = "<group>"; };
 		D42FD30E1E75F79B001E0CCD /* Comparer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comparer.swift; path = Sources/Comparer.swift; sourceTree = "<group>"; };
+		D43351F51E9052F3006C2EA2 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = Sources/Timer.swift; sourceTree = "<group>"; };
+		D433520D1E906C68006C2EA2 /* TimerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerTests.swift; path = Tests/TimerTests.swift; sourceTree = "<group>"; };
 		D4C26B981E58FE4C00E30FE9 /* SpeedyiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpeedyiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C26B9A1E58FE4C00E30FE9 /* SpeedyiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedyiOS.h; sourceTree = "<group>"; };
 		D4C26B9B1E58FE4C00E30FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4C26BA01E58FE4C00E30FE9 /* SpeedyiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedyiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4C26BA51E58FE4C00E30FE9 /* SpeedyiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedyiOSTests.swift; sourceTree = "<group>"; };
 		D4C26BA71E58FE4C00E30FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4C26BB41E58FE7000E30FE9 /* SpeedyMacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpeedyMacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C26BB61E58FE7000E30FE9 /* SpeedyMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedyMacOS.h; sourceTree = "<group>"; };
 		D4C26BB71E58FE7000E30FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4C26BBC1E58FE7000E30FE9 /* SpeedyMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedyMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4C26BC11E58FE7000E30FE9 /* SpeedyMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedyMacOSTests.swift; sourceTree = "<group>"; };
 		D4C26BC31E58FE7000E30FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4C26BD01E58FE8200E30FE9 /* SpeedyTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpeedyTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4C26BD21E58FE8200E30FE9 /* SpeedyTVOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedyTVOS.h; sourceTree = "<group>"; };
 		D4C26BD31E58FE8200E30FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4C26BD81E58FE8200E30FE9 /* SpeedyTVOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedyTVOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4C26BDD1E58FE8200E30FE9 /* SpeedyTVOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedyTVOSTests.swift; sourceTree = "<group>"; };
 		D4C26BDF1E58FE8200E30FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4C26BEC1E58FE8F00E30FE9 /* SpeedyWatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpeedyWatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C26BEE1E58FE8F00E30FE9 /* SpeedyWatchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedyWatchOS.h; sourceTree = "<group>"; };
@@ -217,7 +241,6 @@
 		D4C26BA41E58FE4C00E30FE9 /* SpeedyiOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				D4C26BA51E58FE4C00E30FE9 /* SpeedyiOSTests.swift */,
 				D4C26BA71E58FE4C00E30FE9 /* Info.plist */,
 			);
 			path = SpeedyiOSTests;
@@ -235,7 +258,6 @@
 		D4C26BC01E58FE7000E30FE9 /* SpeedyMacOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				D4C26BC11E58FE7000E30FE9 /* SpeedyMacOSTests.swift */,
 				D4C26BC31E58FE7000E30FE9 /* Info.plist */,
 			);
 			path = SpeedyMacOSTests;
@@ -244,7 +266,6 @@
 		D4C26BD11E58FE8200E30FE9 /* SpeedyTVOS */ = {
 			isa = PBXGroup;
 			children = (
-				D4C26BD21E58FE8200E30FE9 /* SpeedyTVOS.h */,
 				D4C26BD31E58FE8200E30FE9 /* Info.plist */,
 			);
 			path = SpeedyTVOS;
@@ -253,7 +274,6 @@
 		D4C26BDC1E58FE8200E30FE9 /* SpeedyTVOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				D4C26BDD1E58FE8200E30FE9 /* SpeedyTVOSTests.swift */,
 				D4C26BDF1E58FE8200E30FE9 /* Info.plist */,
 			);
 			path = SpeedyTVOSTests;
@@ -277,6 +297,9 @@
 				D4C26C041E58FFB200E30FE9 /* Transformer.swift */,
 				D4C26C091E58FFC200E30FE9 /* Evaluator.swift */,
 				D42FD30E1E75F79B001E0CCD /* Comparer.swift */,
+				D43351F51E9052F3006C2EA2 /* Timer.swift */,
+				D40AC3B71E92F06B00FD2753 /* Value+Timer.swift */,
+				CA99E5371EA03E29008B9D79 /* Wait.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -285,6 +308,8 @@
 			isa = PBXGroup;
 			children = (
 				D4C26C0F1E59004200E30FE9 /* SpeedyTests.swift */,
+				D433520D1E906C68006C2EA2 /* TimerTests.swift */,
+				CA65A00C1EA0CDB700DB198B /* WaitTests.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -312,7 +337,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4C26BE01E58FE8200E30FE9 /* SpeedyTVOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,8 +608,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D40AC3B81E92F06B00FD2753 /* Value+Timer.swift in Sources */,
+				CA99E5381EA03E29008B9D79 /* Wait.swift in Sources */,
 				D4C26C0A1E58FFC200E30FE9 /* Evaluator.swift in Sources */,
 				D4C26BFB1E58FF7A00E30FE9 /* Monitor.swift in Sources */,
+				D43351F61E9052F3006C2EA2 /* Timer.swift in Sources */,
 				D42FD30F1E75F79B001E0CCD /* Comparer.swift in Sources */,
 				D4C26BF61E58FF5C00E30FE9 /* Inspectable.swift in Sources */,
 				D4C26C001E58FF8F00E30FE9 /* Value.swift in Sources */,
@@ -598,13 +625,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4C26C131E59006E00E30FE9 /* Inspectable.swift in Sources */,
+				D433520E1E906C68006C2EA2 /* TimerTests.swift in Sources */,
 				D4C26C171E59006E00E30FE9 /* Evaluator.swift in Sources */,
 				D42FD3101E75F79B001E0CCD /* Comparer.swift in Sources */,
 				D4C26C161E59006E00E30FE9 /* Transformer.swift in Sources */,
 				D4C26C151E59006E00E30FE9 /* Monitor.swift in Sources */,
-				D4C26BA61E58FE4C00E30FE9 /* SpeedyiOSTests.swift in Sources */,
+				CA65A00D1EA0CDB700DB198B /* WaitTests.swift in Sources */,
+				D43351F71E9052F3006C2EA2 /* Timer.swift in Sources */,
+				D40AC3B91E92F06B00FD2753 /* Value+Timer.swift in Sources */,
 				D4C26C101E59004200E30FE9 /* SpeedyTests.swift in Sources */,
 				D4C26C141E59006E00E30FE9 /* Value.swift in Sources */,
+				CA99E5391EA03E29008B9D79 /* Wait.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,8 +643,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D40AC3BA1E92F06B00FD2753 /* Value+Timer.swift in Sources */,
+				CA99E53A1EA03E29008B9D79 /* Wait.swift in Sources */,
 				D4C26C0B1E58FFC200E30FE9 /* Evaluator.swift in Sources */,
 				D4C26BFC1E58FF7A00E30FE9 /* Monitor.swift in Sources */,
+				D43351F81E9052F3006C2EA2 /* Timer.swift in Sources */,
 				D42FD3111E75F79B001E0CCD /* Comparer.swift in Sources */,
 				D4C26BF71E58FF5C00E30FE9 /* Inspectable.swift in Sources */,
 				D4C26C011E58FF8F00E30FE9 /* Value.swift in Sources */,
@@ -626,13 +660,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4C26C181E59006E00E30FE9 /* Inspectable.swift in Sources */,
+				D433520F1E906C68006C2EA2 /* TimerTests.swift in Sources */,
 				D4C26C1C1E59006E00E30FE9 /* Evaluator.swift in Sources */,
 				D42FD3121E75F79B001E0CCD /* Comparer.swift in Sources */,
 				D4C26C1B1E59006E00E30FE9 /* Transformer.swift in Sources */,
 				D4C26C1A1E59006E00E30FE9 /* Monitor.swift in Sources */,
-				D4C26BC21E58FE7000E30FE9 /* SpeedyMacOSTests.swift in Sources */,
+				CA65A00E1EA0CDB700DB198B /* WaitTests.swift in Sources */,
+				D43351F91E9052F3006C2EA2 /* Timer.swift in Sources */,
+				D40AC3BB1E92F06B00FD2753 /* Value+Timer.swift in Sources */,
 				D4C26C111E59004200E30FE9 /* SpeedyTests.swift in Sources */,
 				D4C26C191E59006E00E30FE9 /* Value.swift in Sources */,
+				CA99E53B1EA03E29008B9D79 /* Wait.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,8 +678,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D40AC3BC1E92F06B00FD2753 /* Value+Timer.swift in Sources */,
+				CA99E53C1EA03E29008B9D79 /* Wait.swift in Sources */,
 				D4C26C0C1E58FFC200E30FE9 /* Evaluator.swift in Sources */,
 				D4C26BFD1E58FF7A00E30FE9 /* Monitor.swift in Sources */,
+				D43351FA1E9052F3006C2EA2 /* Timer.swift in Sources */,
 				D42FD3131E75F79B001E0CCD /* Comparer.swift in Sources */,
 				D4C26BF81E58FF5C00E30FE9 /* Inspectable.swift in Sources */,
 				D4C26C021E58FF8F00E30FE9 /* Value.swift in Sources */,
@@ -654,13 +695,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4C26C1D1E59006F00E30FE9 /* Inspectable.swift in Sources */,
+				D43352101E906C68006C2EA2 /* TimerTests.swift in Sources */,
 				D4C26C211E59006F00E30FE9 /* Evaluator.swift in Sources */,
 				D42FD3141E75F79B001E0CCD /* Comparer.swift in Sources */,
 				D4C26C201E59006F00E30FE9 /* Transformer.swift in Sources */,
 				D4C26C1F1E59006F00E30FE9 /* Monitor.swift in Sources */,
-				D4C26BDE1E58FE8200E30FE9 /* SpeedyTVOSTests.swift in Sources */,
+				CA65A00F1EA0CDB700DB198B /* WaitTests.swift in Sources */,
+				D43351FB1E9052F3006C2EA2 /* Timer.swift in Sources */,
+				D40AC3BD1E92F06B00FD2753 /* Value+Timer.swift in Sources */,
 				D4C26C121E59004200E30FE9 /* SpeedyTests.swift in Sources */,
 				D4C26C1E1E59006F00E30FE9 /* Value.swift in Sources */,
+				CA99E53D1EA03E29008B9D79 /* Wait.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,8 +713,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D40AC3BE1E92F06B00FD2753 /* Value+Timer.swift in Sources */,
+				CA99E53E1EA03E29008B9D79 /* Wait.swift in Sources */,
 				D4C26C0D1E58FFC200E30FE9 /* Evaluator.swift in Sources */,
 				D4C26BFE1E58FF7A00E30FE9 /* Monitor.swift in Sources */,
+				D43351FC1E9052F3006C2EA2 /* Timer.swift in Sources */,
 				D42FD3151E75F79B001E0CCD /* Comparer.swift in Sources */,
 				D4C26BF91E58FF5C00E30FE9 /* Inspectable.swift in Sources */,
 				D4C26C031E58FF8F00E30FE9 /* Value.swift in Sources */,

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 	s.name = "Speedy"
-	s.version = "0.1"
+	s.version = "0.2"
 	s.summary = "Reactive Swift property observation framework."
 	s.description = <<-DESC
 	Speedy provides quick and easy property observation tools for Swift.

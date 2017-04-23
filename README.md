@@ -323,6 +323,50 @@ val.value = "Hello" // no output
 val.value = "Hello, World!" // output: "New distinct value: Hello, World!"
 ```
 
+###### Time
+
+You can use Speedy to perform several time based tasks.
+
+* ***Changing values over time*** using the `tick` function:
+
+```swift
+let value = Value(0)
+let metadata = TimerMetadata(interval: 1)
+value.tick(metadata)
+	 .do { $0 + 1 }
+	 .inspect { 
+	 	print($0)
+	 	if $0 >= 10 {
+	 		metadata.stop()
+	    } 
+	 }
+```
+
+The above code will print the values: `1, 2, 3, 4, 5, 6, 7, 8, 9, 10`
+
+* ***Waiting*** using the `Wait` class:
+
+```swift
+Wait(5).then {
+	print("Hello, World!") 
+}
+```
+
+The above code prints `Hello, World!` after a 5 second delay.
+
+```swift
+var count = 0
+Wait(1).repeat {
+	count += 1
+	print("Hello, World!")
+	if count >= 10 {
+		$0 = true
+    }
+}
+```
+
+The above code will print `Hello, World!` until the count var is equal to 10.
+
 Cool huh?
 
 

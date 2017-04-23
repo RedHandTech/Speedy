@@ -42,3 +42,8 @@ public class Value<T>: Inspectable<T> {
         nextItem?.perform(_value, oldValue: oldValue)
     }
 }
+
+
+
+
+
