@@ -29,7 +29,7 @@ public class Wait {
     /// Creates a new Wait instance that waits for the given number of seconds.
     ///
     /// - Parameter seconds: The number of seconds to wait for.
-    init(_ seconds: Float) {
+    public init(_ seconds: Float) {
         self.seconds = seconds
         
         waiters[id] = self
