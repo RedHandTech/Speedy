@@ -1,4 +1,4 @@
+- Better documentation. Look at making .io website through GitHub otherwise do docs one class / item per page and then master README have links and a setup blurb
 - History class. See n number of changes to a value
 - Undo management. Integration with History class to perform rollbacks. Make it really easy.
-- Better documentation.
 - Make everything as easy as possible. Operator overloads etc. E.g. ~> to access the value property directly.
