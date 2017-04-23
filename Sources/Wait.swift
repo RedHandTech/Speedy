@@ -92,6 +92,8 @@ public class Wait {
         
         while isRunning {
             
+            Thread.sleep(forTimeInterval: 1) 
+            
             count += 1
             
             if count >= seconds {
@@ -119,8 +121,6 @@ public class Wait {
                     count = 0
                 }
             }
-            
-            Thread.sleep(forTimeInterval: 1)
         }
     }
     
