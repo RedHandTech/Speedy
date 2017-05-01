@@ -1,0 +1,29 @@
+body {
+	background-color: powderblue;
+}
+
+.header {
+	width: 100%;
+}
+
+.overview {
+	font-family: "Courier New";
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding-top: 10%;
+}
+
+.overview h1 {
+	margin: 0;
+}
+
+.header-title {
+	font-family: "Courier New";
+	font-size: 3.5em;
+}
+
+p {
+	font-family: "Courier New";
+}
