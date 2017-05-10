@@ -27,3 +27,64 @@ body {
 p {
 	font-family: "Courier New";
 }
+
+.footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+}
+
+.footer_wrap {
+	margin: auto;
+}
+
+.footer_content {
+	float: left;
+	width: 100%;
+	padding: 20px 0;
+}
+
+.footer_content a {
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: blue;
+	text-decoration: none;
+	font-family: "Courier New";
+}
+
+.icon_container {
+	position: relative;
+	padding-top: 40px;
+}
+
+.icon_container img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -25px;
+	margin-top: -25px;
+}
+
+.nav {
+	border: 1px solid rgb(234, 10, 242);
+	border-width: 1px 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav a {
+	display: inline-block;
+	padding: 10px;
+	font-family: "Courier New";
+	text-decoration: none;
+	color: rgb(115, 115, 115);
+}
+
+
