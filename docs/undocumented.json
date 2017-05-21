@@ -1,0 +1,26 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/pob/Desktop/Speedy/Speedy/Timer.swift",
+      "line": 97,
+      "symbol": "Time.second",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pob/Desktop/Speedy/Speedy/Timer.swift",
+      "line": 98,
+      "symbol": "Time.minute",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pob/Desktop/Speedy/Speedy/Wait.swift",
+      "line": 74,
+      "symbol": "Wait.cancel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/pob/Desktop/Speedy"
+}
