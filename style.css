@@ -8,20 +8,110 @@ body {
 
 .overview {
 	font-family: "Courier New";
-	position: absolute;
-	align-items: center;
-	justify-content: center;
 	width: 100%;
-	padding-top: 10%;
+	padding-top: 5%;
 }
 
-.overview h1 {
+.overview-header {
+	font-family: "Courier New";
+	font-size: 22px;
+	font-style: italic;
+	font-weight: bold;
+	color: grey;
+}
+
+.overview-answer {
+	font-style: italic;
+	color: rgb(94, 94, 94);
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.overview h4 {
 	margin: 0;
+}
+
+.examples {
+	font-family: "Courier New";
+	width: 100%;
+	padding-top: 10px;
+}
+
+.examples p {
+	padding-left: 10%;
+}
+
+.examples ul {
+	padding-left: 15%;
+}
+
+.examples-header {
+	font-family: "Courier New";
+	font-size: 17px;
+	font-style: italic;
+	font-weight: bold;
+	color: grey;
+}
+
+.getting-started {
+	padding-top: 10px;
+}
+
+.getting-started h4 {
+	font-family: "Courier New";
+	color: black;
+	text-align: center;
+}
+
+.getting-started p {
+	margin: 0 auto;
+	width: 60%;
+	text-align: center;
+}
+
+.example-links {
+	padding-top: 10px;
+}
+
+.example-links p {
+	margin: 0 auto;
+	width: 60%;
+	text-align: center;
+}
+
+.example-links h4 {
+	font-family: "Courier New";
+	color: black;
+	text-align: center;
+}
+
+.example-links a {
+	text-decoration: none;
+	font-family: "Courier New";
+	font-style: italic;
+	color: grey;
+}
+
+.example-links h3 {
+	text-align: center;
 }
 
 .header-title {
 	font-family: "Courier New";
 	font-size: 3.5em;
+	padding-top: 0px;
+}
+
+.code-example {
+	font-family: monospace;
+}
+
+.codeblock {
+	margin: 0 auto;
+	width: 80%;
+	height: 100%;
+	border-radius: 3px;
+	background-color: rgba(94, 94, 94, 0.3);
 }
 
 p {
@@ -42,6 +132,7 @@ p {
 	float: left;
 	width: 100%;
 	padding: 20px 0;
+	font-size: 8px;
 }
 
 .footer_content a {
@@ -55,7 +146,18 @@ p {
 
 .icon_container {
 	position: relative;
-	padding-top: 40px;
+	padding-top: 80px;
+}
+
+.docs-ref {
+	padding-top: 5%;
+	text-align: center;
+}
+
+.docs-ref a {
+	text-decoration: none;
+	color: grey;
+	font-family: "Courier New";
 }
 
 .icon_container img {
@@ -64,27 +166,6 @@ p {
 	left: 50%;
 	margin-left: -25px;
 	margin-top: -25px;
-}
-
-.nav {
-	border: 1px solid rgb(234, 10, 242);
-	border-width: 1px 0;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
-
-.nav li {
-	display: inline;
-}
-
-.nav a {
-	display: inline-block;
-	padding: 10px;
-	font-family: "Courier New";
-	text-decoration: none;
-	color: rgb(115, 115, 115);
 }
 
 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<title>Speedy | Value</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="icon_container">
+				<a href="index.html">
+					<img src="Speed-96.png" width="50" height="50" />
+				</a>
+			</div>
+			<h1 align="center" class="header-title">Value</h1>
+		</div>
+		<div class="examples">
+			<p class="examples-header">Creating Values</p>
+			<p>
+				The following code snippet creates a Speedy Value ready to be observed.
+			</p>
+			<div class="codeblock">
+				<blockquote>
+					<pre class="code-example">
+						<code class="prettyprint">
+
+class SomeViewModel {
+	
+	let labelTitle = Value("Hello, World!")
+	/*
+	 * labelTitle will be of type Value&ltString&gt
+	 */
+}
+
+						</code>
+					</pre>
+				</blockquote>
+			</div>
+			<p>
+				Pretty simple right!
+			</p>
+			<br>
+			<p class="examples-header">Inspecting Values</p>
+			<p>
+				The Value class has a value property (funnily enough...)
+			</p>
+			<div class="codeblock">
+				<blockquote>
+					<pre class="code-example">
+						<code class="prettyprint">
+
+class SomeView: MasterView {
+	
+	let viewModel: SomeViewModel ...
+
+	func doCoolThing() {
+		print(viewModel.labelTitle.value)
+	}
+}
+
+						</code>
+					</pre>
+				</blockquote>
+			</div>
+			<p>
+				The value property will in this case be a String.
+			</p>
+			<br>
+			<p class="examples-header">Reactive Inspection</p>
+			<p>
+				Now it's time to do some cool stuff and set up some reactive inspection.
+			</p>
+			<div class="codeblock">
+				<blockquote>
+					<pre class="code-example">
+						<code class="prettyprint">
+
+class SomeViewController: UIViewController {
+	
+	let viewModel: SomeViewModel ...
+
+	@IBOutlet var label: UILabel?
+
+	override func viewDidLoad() {
+		weak var welf = self // IMPORTANT (see below)
+		viewModel.labelTitle.inspect { weakSelf?.label?.text = $0 }
+	}
+}
+
+						</code>
+					</pre>
+				</blockquote>
+			</div>
+			<p>
+				The above code sets up the simplest "observer chain" that is triggered when the value of labelTitle is changed. This is all you have to do and the text of your label will be automatically updated every time!
+			</p>
+			<br>
+				<p>
+					Note the IMPORTANT comment in the above code. When you call inspect on Value (or any other function that takes a closure as an argument) the Value creates a strong reference to that closure (and any referenced object within it). In this case this results in a retain cycle and neither the view model nor the view controller will ever be released. For more info on retain cyles see the Apple Docs.
+				</p>
+			<br>
+		</div>
+	</body>
+</html>

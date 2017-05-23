@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>TimerFunction Class Reference</title>
+    <title>Time Enum Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,18 +10,19 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/TimerFunction" class="dashAnchor"></a>
-    <a title="TimerFunction Class Reference"></a>
+    <a name="//apple_ref/swift/Enum/Time" class="dashAnchor"></a>
+    <a title="Time Enum Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (90% documented)</p>
+        <p><a href="../index.html">Speedy Docs</a> (90% documented)</p>
+        <p class="header-right"><a href="https://github.com/RedHandTech/Speedy"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="../index.html"> Reference</a>
+        <a href="../index.html">Speedy Reference</a>
         <img id="carat" src="../img/carat.png" />
-        TimerFunction Class Reference
+        Time Enum Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -60,32 +61,30 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>TimerFunction</h1>
+            <h1>Time</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TimerFunction</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Time</span><span class="p">:</span> <span class="kt">Float</span></code></pre>
 
                 </div>
               </div>
-            <p>A class that encapsulates functionality that will periodically update a value.</p>
+            <p>Time enumeration for convinience.</p>
+
+<ul>
+<li>second: Value 1</li>
+<li>minute: Value 60</li>
+</ul>
 
           </section>
           <section class="section task-group-section">
             <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Public"></a>
-                <a name="//apple_ref/swift/Section/Public" class="dashAnchor"></a>
-                <a href="#/Public">
-                  <h3 class="section-name">Public</h3>
-                </a>
-              </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC6Speedy13TimerFunction2doFFxxGCS_11Inspectablex_"></a>
-                    <a name="//apple_ref/swift/Method/do(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC6Speedy13TimerFunction2doFFxxGCS_11Inspectablex_">do(_:)</a>
+                    <a name="/s:FO6Speedy4Time6secondFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/second" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO6Speedy4Time6secondFMS0_S0_">second</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -93,39 +92,53 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A required function that defines how a value is updated over time.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="err">`</span><span class="k">do</span><span class="err">`</span><span class="p">(</span><span class="n">_</span> <span class="nv">performer</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Inspectable.html">Inspectable</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Time</span><span class="p">:</span> <span class="kt">Float</span></code></pre>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>performer</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The closure to be called once every time interval. The changes to T will be reflected in the associated value.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RedHandTech/Speedy/tree/0.2.1/Speedy/Timer.swift#L">Show on GitHub</a>
                       </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The next inspectable in the chain. In this case it is the Timer class itself.</p>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO6Speedy4Time6minuteFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/minute" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO6Speedy4Time6minuteFMS0_S0_">minute</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Time</span><span class="p">:</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RedHandTech/Speedy/tree/0.2.1/Speedy/Timer.swift#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -135,7 +148,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-05-21)</p>
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external">Red Hand Technologies LTD</a>. All rights reserved. (Last updated: 2017-05-23)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
